@@ -1,2 +1,2 @@
-graft litex/data/cpu/picorv32/verilog/
+graft pythondata_cpu_picorv32/verilog/
 global-exclude *.py[cod]
