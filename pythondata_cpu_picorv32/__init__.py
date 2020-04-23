@@ -4,33 +4,33 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/cliffordwolf/picorv32"
 
 # Module version
-version_str = "1.0.post74"
-version_tuple = (1, 0, 74)
+version_str = "1.0.post83"
+version_tuple = (1, 0, 83)
 try:
     from packaging.version import Version as V
-    pversion = V("1.0.post74")
+    pversion = V("1.0.post83")
 except ImportError:
     pass
 
 # Data version info
-data_version_str = "1.0.post25"
-data_version_tuple = (1, 0, 25)
+data_version_str = "1.0.post34"
+data_version_tuple = (1, 0, 34)
 try:
     from packaging.version import Version as V
-    pdata_version = V("1.0.post25")
+    pdata_version = V("1.0.post34")
 except ImportError:
     pass
-data_git_hash = "824a5c801194299f89f4fd8844c1fbcd1bdf4e21"
-data_git_describe = "v1.0-25-g824a5c8"
+data_git_hash = "409d0dfd6772551e2ce77502e368973c447cbeb8"
+data_git_describe = "v1.0-34-g409d0df"
 data_git_msg = """\
-commit 824a5c801194299f89f4fd8844c1fbcd1bdf4e21
-Merge: e308982 a7ff70d
+commit 409d0dfd6772551e2ce77502e368973c447cbeb8
+Merge: fe1ee2c 0201e8f
 Author: Claire Wolf <clifford@clifford.at>
-Date:   Wed Apr 15 18:49:23 2020 +0200
+Date:   Wed Apr 22 17:32:19 2020 +0200
 
-    Merge pull request #158 from rxrbln/uart
+    Merge pull request #145 from Novakov/patch-1
     
-    added default clk divider parameter to simpleuart
+    spimemio documentation: read latency reset value
 
 """
 
