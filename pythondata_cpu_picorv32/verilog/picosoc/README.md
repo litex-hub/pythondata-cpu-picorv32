@@ -28,20 +28,20 @@ and upload them to a connected iCE40-HX8K Breakout Board.
 Run `make icebprog` to build the configuration bit-stream and firmware images
 and upload them to a connected iCEBreaker Board.
 
-| File                              | Description                                                     |
-| --------------------------------- | --------------------------------------------------------------- |
-| [picosoc.v](picosoc.v)            | Top-level PicoSoC Verilog module                                |
-| [spimemio.v](spimemio.v)          | Memory controller that interfaces to external SPI flash         |
-| [simpleuart.v](simpleuart.v)      | Simple UART core connected directly to SoC TX/RX lines          |
-| [start.s](start.s)                | Assembler source for firmware.hex/firmware.bin                  |
-| [firmware.c](firmware.c)          | C source for firmware.hex/firmware.bin                          |
-| [sections.lds](sections.lds)      | Linker script for firmware.hex/firmware.bin                     |
-| [hx8kdemo.v](hx8kdemo.v)          | FPGA-based example implementation on iCE40-HX8K Breakout Board  |
-| [hx8kdemo.pcf](hx8kdemo.pcf)      | Pin constraints for implementation on iCE40-HX8K Breakout Board |
-| [hx8kdemo\_tb.v](hx8kdemo_tb.v)   | Testbench for implementation on iCE40-HX8K Breakout Board       |
-| [icebreaker.v](hx8kdemo.v)        | FPGA-based example implementation on iCEBreaker Board           |
-| [icebreaker.pcf](hx8kdemo.pcf)    | Pin constraints for implementation on iCEBreaker Board          |
-| [icebreaker\_tb.v](hx8kdemo_tb.v) | Testbench for implementation on iCEBreaker Board                |
+| File                                | Description                                                     |
+| ----------------------------------- | --------------------------------------------------------------- |
+| [picosoc.v](picosoc.v)              | Top-level PicoSoC Verilog module                                |
+| [spimemio.v](spimemio.v)            | Memory controller that interfaces to external SPI flash         |
+| [simpleuart.v](simpleuart.v)        | Simple UART core connected directly to SoC TX/RX lines          |
+| [start.s](start.s)                  | Assembler source for firmware.hex/firmware.bin                  |
+| [firmware.c](firmware.c)            | C source for firmware.hex/firmware.bin                          |
+| [sections.lds](sections.lds)        | Linker script for firmware.hex/firmware.bin                     |
+| [hx8kdemo.v](hx8kdemo.v)            | FPGA-based example implementation on iCE40-HX8K Breakout Board  |
+| [hx8kdemo.pcf](hx8kdemo.pcf)        | Pin constraints for implementation on iCE40-HX8K Breakout Board |
+| [hx8kdemo\_tb.v](hx8kdemo_tb.v)     | Testbench for implementation on iCE40-HX8K Breakout Board       |
+| [icebreaker.v](icebreaker.v)        | FPGA-based example implementation on iCEBreaker Board           |
+| [icebreaker.pcf](icebreaker.pcf)    | Pin constraints for implementation on iCEBreaker Board          |
+| [icebreaker\_tb.v](icebreaker_tb.v) | Testbench for implementation on iCEBreaker Board                |
 
 ### Memory map:
 
@@ -75,7 +75,7 @@ mapped to the low byte of the 32 bit word at address 0x03000000.
 |     22 | DDR Enable bit (reset=0)                                  |
 |     21 | QSPI Enable bit (reset=0)                                 |
 |     20 | CRM Enable bit (reset=0)                                  |
-|  19:16 | Read latency (dummy) cycles (reset=0)                     |
+|  19:16 | Read latency (dummy) cycles (reset=8)                     |
 |  15:12 | Reserved (read 0)                                         |
 |   11:8 | IO Output enable bits in bit bang mode                    |
 |    7:6 | Reserved (read 0)                                         |
