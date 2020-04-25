@@ -4,33 +4,32 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/cliffordwolf/picorv32"
 
 # Module version
-version_str = "1.0.post83"
-version_tuple = (1, 0, 83)
+version_str = "1.0.post87"
+version_tuple = (1, 0, 87)
 try:
     from packaging.version import Version as V
-    pversion = V("1.0.post83")
+    pversion = V("1.0.post87")
 except ImportError:
     pass
 
 # Data version info
-data_version_str = "1.0.post34"
-data_version_tuple = (1, 0, 34)
+data_version_str = "1.0.post38"
+data_version_tuple = (1, 0, 38)
 try:
     from packaging.version import Version as V
-    pdata_version = V("1.0.post34")
+    pdata_version = V("1.0.post38")
 except ImportError:
     pass
-data_git_hash = "409d0dfd6772551e2ce77502e368973c447cbeb8"
-data_git_describe = "v1.0-34-g409d0df"
+data_git_hash = "59ef49564f214f5031cf7e6c67290dac6354fb69"
+data_git_describe = "v1.0-38-g59ef495"
 data_git_msg = """\
-commit 409d0dfd6772551e2ce77502e368973c447cbeb8
-Merge: fe1ee2c 0201e8f
-Author: Claire Wolf <clifford@clifford.at>
-Date:   Wed Apr 22 17:32:19 2020 +0200
+commit 59ef49564f214f5031cf7e6c67290dac6354fb69
+Author: Larry Doolittle <ldoolitt@recycle.lbl.gov>
+Date:   Thu Apr 23 18:01:24 2020 +0200
 
-    Merge pull request #145 from Novakov/patch-1
+    Remove obsolete line from firmware/sections.lds
     
-    spimemio documentation: read latency reset value
+    Signed-off-by: Claire Wolf <claire@symbioticeda.com>
 
 """
 
