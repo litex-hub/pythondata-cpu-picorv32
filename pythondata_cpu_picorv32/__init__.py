@@ -4,30 +4,30 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/cliffordwolf/picorv32"
 
 # Module version
-version_str = "1.0.post87"
-version_tuple = (1, 0, 87)
+version_str = "1.0.post88"
+version_tuple = (1, 0, 88)
 try:
     from packaging.version import Version as V
-    pversion = V("1.0.post87")
+    pversion = V("1.0.post88")
 except ImportError:
     pass
 
 # Data version info
-data_version_str = "1.0.post38"
-data_version_tuple = (1, 0, 38)
+data_version_str = "1.0.post39"
+data_version_tuple = (1, 0, 39)
 try:
     from packaging.version import Version as V
-    pdata_version = V("1.0.post38")
+    pdata_version = V("1.0.post39")
 except ImportError:
     pass
-data_git_hash = "59ef49564f214f5031cf7e6c67290dac6354fb69"
-data_git_describe = "v1.0-38-g59ef495"
+data_git_hash = "f9b1beb4cfd6b382157b54bc8f38c61d5ae7d785"
+data_git_describe = "v1.0-39-gf9b1beb"
 data_git_msg = """\
-commit 59ef49564f214f5031cf7e6c67290dac6354fb69
+commit f9b1beb4cfd6b382157b54bc8f38c61d5ae7d785
 Author: Larry Doolittle <ldoolitt@recycle.lbl.gov>
-Date:   Thu Apr 23 18:01:24 2020 +0200
+Date:   Mon Apr 27 17:23:45 2020 +0200
 
-    Remove obsolete line from firmware/sections.lds
+    Make Makefile more flexible
     
     Signed-off-by: Claire Wolf <claire@symbioticeda.com>
 
