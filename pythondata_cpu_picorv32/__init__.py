@@ -4,11 +4,11 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/cliffordwolf/picorv32"
 
 # Module version
-version_str = "1.0.post88"
-version_tuple = (1, 0, 88)
+version_str = "1.0.post89"
+version_tuple = (1, 0, 89)
 try:
     from packaging.version import Version as V
-    pversion = V("1.0.post88")
+    pversion = V("1.0.post89")
 except ImportError:
     pass
 
@@ -34,11 +34,11 @@ Date:   Mon Apr 27 17:23:45 2020 +0200
 """
 
 # Tool version info
-tool_version_str = "0.0.post49"
-tool_version_tuple = (0, 0, 49)
+tool_version_str = "0.0.post50"
+tool_version_tuple = (0, 0, 50)
 try:
     from packaging.version import Version as V
-    ptool_version = V("0.0.post49")
+    ptool_version = V("0.0.post50")
 except ImportError:
     pass
 
