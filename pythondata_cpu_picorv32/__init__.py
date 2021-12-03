@@ -4,32 +4,30 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/cliffordwolf/picorv32"
 
 # Module version
-version_str = "1.0.post152"
-version_tuple = (1, 0, 152)
+version_str = "1.0.post153"
+version_tuple = (1, 0, 153)
 try:
     from packaging.version import Version as V
-    pversion = V("1.0.post152")
+    pversion = V("1.0.post153")
 except ImportError:
     pass
 
 # Data version info
-data_version_str = "1.0.post40"
-data_version_tuple = (1, 0, 40)
+data_version_str = "1.0.post41"
+data_version_tuple = (1, 0, 41)
 try:
     from packaging.version import Version as V
-    pdata_version = V("1.0.post40")
+    pdata_version = V("1.0.post41")
 except ImportError:
     pass
-data_git_hash = "100e421be0aa5fb130b6e4f532d15fc7d1a03f02"
-data_git_describe = "v1.0-40-g100e421"
+data_git_hash = "e8edf98772672653c67dc3f4877980abcaaedf09"
+data_git_describe = "v1.0-41-ge8edf98"
 data_git_msg = """\
-commit 100e421be0aa5fb130b6e4f532d15fc7d1a03f02
-Author: Claire Xenia Wolf <claire@clairexen.net>
-Date:   Thu Dec 2 15:59:12 2021 +0100
+commit e8edf98772672653c67dc3f4877980abcaaedf09
+Author: Miodrag Milanovic <mmicko@gmail.com>
+Date:   Fri Dec 3 15:54:08 2021 +0100
 
-    Fix copyright info
-    
-    Signed-off-by: Claire Xenia Wolf <claire@clairexen.net>
+    add license file
 
 """
 
