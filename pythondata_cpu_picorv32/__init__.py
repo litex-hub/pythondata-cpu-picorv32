@@ -4,39 +4,42 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/cliffordwolf/picorv32"
 
 # Module version
-version_str = "1.0.post153"
-version_tuple = (1, 0, 153)
+version_str = "1.0.post160"
+version_tuple = (1, 0, 160)
 try:
     from packaging.version import Version as V
-    pversion = V("1.0.post153")
+    pversion = V("1.0.post160")
 except ImportError:
     pass
 
 # Data version info
-data_version_str = "1.0.post41"
-data_version_tuple = (1, 0, 41)
+data_version_str = "1.0.post47"
+data_version_tuple = (1, 0, 47)
 try:
     from packaging.version import Version as V
-    pdata_version = V("1.0.post41")
+    pdata_version = V("1.0.post47")
 except ImportError:
     pass
-data_git_hash = "e8edf98772672653c67dc3f4877980abcaaedf09"
-data_git_describe = "v1.0-41-ge8edf98"
+data_git_hash = "1d9f5b7678c008fd4ab71d9c742a70ff2365f186"
+data_git_describe = "v1.0-47-g1d9f5b7"
 data_git_msg = """\
-commit e8edf98772672653c67dc3f4877980abcaaedf09
-Author: Miodrag Milanovic <mmicko@gmail.com>
-Date:   Fri Dec 3 15:54:08 2021 +0100
+commit 1d9f5b7678c008fd4ab71d9c742a70ff2365f186
+Merge: 6b13977 2cce6f4
+Author: Claire Xen <claire@clairexen.net>
+Date:   Mon Dec 6 16:10:29 2021 +0100
 
-    add license file
+    Merge pull request #166 from tommythorn/master
+    
+    Enable the use of 64-bit riscv tools
 
 """
 
 # Tool version info
-tool_version_str = "0.0.post112"
-tool_version_tuple = (0, 0, 112)
+tool_version_str = "0.0.post113"
+tool_version_tuple = (0, 0, 113)
 try:
     from packaging.version import Version as V
-    ptool_version = V("0.0.post112")
+    ptool_version = V("0.0.post113")
 except ImportError:
     pass
 
