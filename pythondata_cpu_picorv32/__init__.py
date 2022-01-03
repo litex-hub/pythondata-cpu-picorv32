@@ -4,33 +4,33 @@ data_location = os.path.join(__dir__, "verilog")
 src = "https://github.com/cliffordwolf/picorv32"
 
 # Module version
-version_str = "1.0.post164"
-version_tuple = (1, 0, 164)
+version_str = "1.0.post169"
+version_tuple = (1, 0, 169)
 try:
     from packaging.version import Version as V
-    pversion = V("1.0.post164")
+    pversion = V("1.0.post169")
 except ImportError:
     pass
 
 # Data version info
-data_version_str = "1.0.post47"
-data_version_tuple = (1, 0, 47)
+data_version_str = "1.0.post52"
+data_version_tuple = (1, 0, 52)
 try:
     from packaging.version import Version as V
-    pdata_version = V("1.0.post47")
+    pdata_version = V("1.0.post52")
 except ImportError:
     pass
-data_git_hash = "1d9f5b7678c008fd4ab71d9c742a70ff2365f186"
-data_git_describe = "v1.0-47-g1d9f5b7"
+data_git_hash = "f00a88c36eaab478b64ee27d8162e421049bcc66"
+data_git_describe = "v1.0-52-gf00a88c"
 data_git_msg = """\
-commit 1d9f5b7678c008fd4ab71d9c742a70ff2365f186
-Merge: 6b13977 2cce6f4
+commit f00a88c36eaab478b64ee27d8162e421049bcc66
+Merge: 1d9f5b7 e8dbd9a
 Author: Claire Xen <claire@clairexen.net>
-Date:   Mon Dec 6 16:10:29 2021 +0100
+Date:   Mon Jan 3 16:03:13 2022 +0100
 
-    Merge pull request #166 from tommythorn/master
+    Merge pull request #209 from YosysHQ/micko/cleanups
     
-    Enable the use of 64-bit riscv tools
+    Cleanups
 
 """
 
