@@ -1,45 +1,42 @@
 import os.path
 __dir__ = os.path.split(os.path.abspath(os.path.realpath(__file__)))[0]
 data_location = os.path.join(__dir__, "verilog")
-src = "https://github.com/cliffordwolf/picorv32"
+src = "https://github.com/YosysHQ/picorv32"
 
 # Module version
-version_str = "1.0.post194"
-version_tuple = (1, 0, 194)
+version_str = "1.0.post218"
+version_tuple = (1, 0, 218)
 try:
     from packaging.version import Version as V
-    pversion = V("1.0.post194")
+    pversion = V("1.0.post218")
 except ImportError:
     pass
 
 # Data version info
-data_version_str = "1.0.post52"
-data_version_tuple = (1, 0, 52)
+data_version_str = "1.0.post70"
+data_version_tuple = (1, 0, 70)
 try:
     from packaging.version import Version as V
-    pdata_version = V("1.0.post52")
+    pdata_version = V("1.0.post70")
 except ImportError:
     pass
-data_git_hash = "f00a88c36eaab478b64ee27d8162e421049bcc66"
-data_git_describe = "v1.0-52-gf00a88c"
+data_git_hash = "87c89acc18994c8cf9a2311e871818e87d304568"
+data_git_describe = "v1.0-70-g87c89acc1899"
 data_git_msg = """\
-commit f00a88c36eaab478b64ee27d8162e421049bcc66
-Merge: 1d9f5b7 e8dbd9a
-Author: Claire Xen <claire@clairexen.net>
-Date:   Mon Jan 3 16:03:13 2022 +0100
+commit 87c89acc18994c8cf9a2311e871818e87d304568
+Author: Miodrag Milanovic <mmicko@gmail.com>
+Date:   Mon Jun 17 08:20:13 2024 +0200
 
-    Merge pull request #209 from YosysHQ/micko/cleanups
-    
-    Cleanups
+    clean Makefile
 
 """
 
 # Tool version info
-tool_version_str = "0.0.post142"
-tool_version_tuple = (0, 0, 142)
+tool_version_str = "0.0.post148"
+tool_version_tuple = (0, 0, 148)
 try:
     from packaging.version import Version as V
-    ptool_version = V("0.0.post142")
+    ptool_version = V("0.0.post148")
 except ImportError:
     pass
 
